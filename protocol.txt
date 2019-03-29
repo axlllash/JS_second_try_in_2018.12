@@ -1,0 +1,53 @@
+约定默认JSON格式POST 括号前的是key 括号里是备注
+通信全部明文即可 有HTTPS防止中间人攻击
+暂时不用cookie 用session就行
+几乎每次返回都会返回状态码 状态码在最后列出 每次返回后先检查状态码 非0就不用看其他返回的信息了 直接报错
+
+/sign-in      登录。发送 mail(邮箱) password(只含 大小写字母数字!@#$%^&* ) 
+                返回 code(状态码) session(64个字符的字符串) name(昵称)
+
+/sign-up      注册。第一次发送 mail(邮vcode箱) 
+                        返回 code  vcode(验证码的key)
+              当用户输入验证码后 第二次发送 name(昵称 中文大小写字母数字) password(密码) 
+                            vcode(即上面的验证码key) icode(用户输入的验证码)
+                            返回 code
+
+/friend       好友信息。发送  session
+                    返回  mail:string数组
+                    暂定信息只有  mail,username,nickname
+
+/new-friend   添加好友。发送 session mail(要添加的好友的邮箱) nickname(昵称)
+                    返回 code name
+
+/get-message  获取消息。 发送 session
+						返回 code  info
+						info是一个字符串  这个字符串是json格式转化过来的 你得再转换回json
+						from:(string数组)     from表示谁发的
+						string组中信息 time,message   time为消息发送时间  message是消息内容
+
+/send-message 发送消息。发送 session to message   to表示发给谁
+						返回code
+
+/get-post     获取动态。发送 session
+						返回 from:(string数组)
+						string组中信息 time,post    time为动态发送时间  post为动态内容
+						该json长度最多为10  即一次性拉取10条动态
+
+/send-post    发送动态。发送 session  post
+						返回code
+
+    状态码：
+	"0"  //正常
+	"1"  //未知错误
+	"2"  //登录的邮箱或密码错误
+	"3"  //邮箱错误
+	"4"  //注册通道关闭
+	"5"  //注册的密码格式错误
+	"6"  //验证码错误
+	"7"  //注册的名称格式错误
+	"8"  //登录失败次数超过限制(3次)
+	"9"  //邮箱已注册
+	"10" //会话无效
+	"11" //验证码错误
+	"12" //邮件发送错误
+	"13" //ping消息

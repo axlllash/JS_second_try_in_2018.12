@@ -1,0 +1,44 @@
+.uknow-unlogin-register-first .label,
+.uknow-unlogin-register-second .label,
+.uknow-unlogin-login .label {
+  display: inline-block;
+  width: 1rem;
+  overflow: visible;
+  text-align: center;
+  margin: 0 0 .1rem .5rem;
+}
+
+.uknow-unlogin-register-first input,
+.uknow-unlogin-register-second input,
+.uknow-unlogin-login input {
+  display: inline-block;
+  height: .2rem;
+  width: 1rem;
+  margin-left: 3rem;
+}
+
+.uknow-unlogin-register-first .nextButton,
+.uknow-unlogin-register-second .submit,
+.uknow-unlogin-register-second .returnButton,
+.uknow-unlogin-login .submit {
+  height: .4rem;
+  width: 2rem;
+  margin: 2rem auto 0 auto;
+  line-height: .4rem;
+  font-size: .16rem;
+  border-radius: .01rem;
+  border: 1px solid red;
+  text-align: center;
+}
+
+.uknow-unlogin-register-second .submit {
+  margin-top: .5rem;
+}
+
+.uknow-unlogin-register-second .returnButton {
+  margin-top: .1rem;
+}
+
+.uknow-unlogin-login .submit{
+  margin-top: 1.6rem;
+}

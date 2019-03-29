@@ -1,0 +1,49 @@
+.uknow-friend-wrapper {
+  width: 3.63rem;
+  height: .553rem;
+  padding-bottom: .03rem;
+  overflow: hidden;
+  position: relative;
+}
+
+.uknow-friend-wrapper .uknow-util_b-unreadNumber {
+  top: 30%;
+  right: 20%;
+}
+
+.uknow-friend-wrapper .head {
+  width: .55rem;
+  height: .55rem;
+  float: left;
+  margin: 0 .155rem;
+  border-radius: .1rem;
+}
+
+.uknow-friend-wrapper .name,
+.uknow-friend-wrapper .partRecord {
+  line-height: .55rem;
+  height: .55rem;
+  float: left;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.uknow-friend-wrapper .name {
+  width: .8rem;
+  margin-right: .1rem;
+  font-size: .2rem;
+}
+
+.uknow-friend-wrapper .partRecord {
+  width: 1.2rem;
+  color: #888;
+}
+
+.uknow-friend-wrapper .chatButton {
+  float: right;
+  height: .55rem;
+  background-color: #eee;
+  border-radius: .1rem;
+  line-height: .55rem;
+}

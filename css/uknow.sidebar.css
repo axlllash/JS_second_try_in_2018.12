@@ -1,0 +1,137 @@
+.uknow-sidebar-head {
+  height: 1.05rem;
+  width: 100%;
+}
+
+.uknow-sidebar-head-logOut {
+  width: 100%;
+  height: 100%;
+  line-height: 1.05rem;
+  font-size: .2rem;
+  text-align: center;
+}
+
+.uknow-sidebar-head-logIn {
+  font-size: .25rem;
+  width: 100%;
+  height: 100%;
+}
+
+.uknow-sidebar-head-logIn .head {
+  float: left;
+  margin: .155rem .06rem .155rem .06rem;
+  width: .74rem;
+  height: .74rem;
+  border-radius: .2rem;
+  transition: .5s;
+}
+
+.uknow-sidebar-head.show .uknow-sidebar-head-logIn .head {
+  width: 1rem;
+  height: 1rem;
+  margin: .025rem;
+  margin-left: .365rem;
+  border-radius: 50%;
+  transition: .5s;
+}
+
+.uknow-sidebar-head-logIn .name,
+.uknow-sidebar-head-logIn .logOut {
+  float: left;
+  text-align: center;
+  width: 2.24rem;
+  height: 50%;
+  line-height: .525rem;
+  opacity: 0;
+  transition: .5s;
+}
+
+.uknow-sidebar-head.show .uknow-sidebar-head-logIn .name,
+.uknow-sidebar-head.show .uknow-sidebar-head-logIn .logOut {
+  opacity: 1;
+  transition: .5s;
+}
+
+.uknow-sidebar-content {
+  height: 5.53rem;
+  width: 100%;
+}
+
+.uknow-sidebar-content .sidebarWrapper {
+  overflow: auto;
+  width: 4rem;
+  height: 5.53rem;
+}
+
+.uknow-sidebar-footer {
+  height: .65rem;
+  width: 100%;
+  font-size: 0;
+}
+
+.uknow-sidebar-footer .addFriend {
+  display: none;
+  width: 0;
+  line-height: .65rem;
+  font-size: .5rem;
+  overflow: hidden;
+  margin-left: .3rem;
+  text-align: center;
+  color: #aaa;
+}
+
+.uknow-sidebar-footer.show .addFriend {
+  display: inline-block;
+  width: .65rem;
+  height: .65rem;
+}
+
+.uknow-sidebar-footer .postNewBlog {
+  background-color: #eee;
+  border-radius: .1rem;
+  width: .86rem;
+  height: 100%;
+  line-height: .65rem;
+  font-size: .16rem;
+  text-align: center;
+}
+
+.uknow-sidebar-footer.show .postNewBlog {
+  width: 2.24rem;
+  float: right;
+}
+
+.uknow-sidebar-sure {
+  float: left;
+  margin: .5rem .3rem .3rem .3rem;
+}
+
+.uknow-sidebar-cancel {
+  float: right;
+  margin: .5rem .3rem .3rem .3rem;
+}
+
+.uknow-sidebar-addFriend .label {
+  display: inline-block;
+  width: 1rem;
+  overflow: visible;
+  text-align: center;
+  margin: 0 0 .1rem .5rem;
+}
+
+.uknow-sidebar-addFriend .addButton,
+.uknow-sidebar-addFriend .error {
+  height: .4rem;
+  width: 2rem;
+  margin: 2rem auto 0 auto;
+  line-height: .4rem;
+  font-size: .16rem;
+  border-radius: .01rem;
+  border: 1px solid red;
+  text-align: center;
+}
+
+.uknow-sidebar-addFriend .addButton {
+  margin-top: .5rem;
+}
+

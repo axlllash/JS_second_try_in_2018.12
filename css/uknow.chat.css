@@ -1,0 +1,76 @@
+.uknow-chat {
+  height: 100%;
+}
+
+.uknow-chat .friendListWrapper {
+  width: 1.37rem;
+  height: 100%;
+  float: left;
+  overflow: hidden;
+  /*这里加个边框，后期要删掉*/
+  border: 1px solid red;
+}
+
+.uknow-chat .friendList {
+  overflow: auto;
+  width: 1.6rem;
+}
+
+.uknow-chat-window .friendListItem {
+  position: relative;
+  width: 1.37rem;
+  overflow: hidden;
+}
+
+.uknow-chat .mainContent {
+  width: 4.46rem;
+  height: 100%;
+  float: right;
+  overflow: hidden;
+  /*这里加个边框，后期要删掉*/
+  border: 1px red solid;
+}
+
+.uknow-chat .messageWrapper {
+  width: 4.7rem;
+  height: 2.82rem;
+  overflow: auto;
+}
+
+.uknow-chat #messageForm {
+  height: .48rem;
+}
+
+.uknow-chat-window textarea {
+  display: block;
+  resize: none;
+  height: .48rem;
+  /*这里暂时减.02rem，因为边框的原因*/
+  width: 3.39rem;
+  float: left;
+}
+
+.uknow-chat-window #messageForm .button {
+  height: .48rem;
+  width: 1.05rem;
+  line-height: .48rem;
+  float: right;
+  text-align: center;
+}
+
+.uknow-chat-window .messageWrapper .message {
+  width: 4.46rem;
+}
+
+.uknow-chat-window .date {
+  text-align: center;
+}
+
+.uknow-chat-from-friend .messageContent {
+  float: left;
+}
+
+.uknow-chat-from-me .messageContent {
+  float: right;
+  margin-right: .1rem;
+}
